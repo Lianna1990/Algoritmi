@@ -50,6 +50,9 @@ public class Deque {
             head = 0;
         return data[head];
 
+
+
+
     }
 }
 
