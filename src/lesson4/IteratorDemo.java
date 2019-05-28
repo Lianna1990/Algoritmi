@@ -1,11 +1,8 @@
 package lesson4;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
-public class IteratorDemo<listIterator> {
+public class IteratorDemo{
     public static void main(String[] args) {
         List arrayList = new ArrayList<> ();
 
@@ -60,7 +57,22 @@ public class IteratorDemo<listIterator> {
 
         System.out.println ("\n========================\n");
     }
-}
+
+   /* public  T next () {
+
+        checkForComodification();
+        int i = cursor;
+        if (i >= size)
+            throw new NoSuchFieldException ();
+        Object[] elementData = ArrayList.this.elementData;
+        if (i >= elementData.length)
+            throw  new ConcurrentModificationException ();
+        cursor = i +1;
+        return (T) elementData[lastRet = i]; */
+
+    }
+
+
 
 
 
