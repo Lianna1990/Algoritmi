@@ -199,7 +199,6 @@ class Tree{
         }
     }
 
-}
 
 
 
@@ -208,7 +207,8 @@ class Tree{
 
 
 
-     /*   public static boolean isBalanced(Node node){
+
+       public static boolean isBalanced(Node node){
             return (node == null) ||
                     isBalanced (node.leftChild) &&
                             isBalanced (node.rightChild) &&
@@ -218,4 +218,5 @@ class Tree{
         private static  int height(Node node){
             return node == null ? 0 : 1 + Math.max (height(node.leftChild), height(node.rightChild));
 
-        } */
+        }
+}
