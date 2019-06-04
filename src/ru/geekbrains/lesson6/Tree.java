@@ -162,13 +162,13 @@ class Tree{
     }
 
     public void displayTree(){
-        Stack stack = new Stack(100);
+        Stack stack = new Stack(25);
         stack.push(root);
-        int nBlanks = 32;
+        int nBlanks = 31;
         boolean isRowEmpty = false;
 
         while (!isRowEmpty) {
-            Stack localStack = new Stack(100);
+            Stack localStack = new Stack(25);
             isRowEmpty = true;
             for(int i=0;i<nBlanks;i++){
                 System.out.print(" ");
@@ -208,15 +208,15 @@ class Tree{
 
 
 
-       public static boolean isBalanced(Node node){
-            return (node == null) ||
-                    isBalanced (node.leftChild) &&
-                            isBalanced (node.rightChild) &&
-                            Math.abs (height (node.leftChild - height (node.rightChild)) <= 1);
-        }
+    public static boolean isBalanced(Node node) {
+        return (node == null) ||
+                isBalanced(node.leftChild) &&
+                        isBalanced(node.rightChild) &&
+                        Math.abs(height(node.leftChild) - height(node.rightChild)) <= 1;
+    }
 
-        private static  int height(Node node){
-            return node == null ? 0 : 1 + Math.max (height(node.leftChild), height(node.rightChild));
+    private static int height(Node node) {
+        return node == null ? 0 : 1 + Math.max(height(node.leftChild), height(node.rightChild));
+    }
 
-        }
 }

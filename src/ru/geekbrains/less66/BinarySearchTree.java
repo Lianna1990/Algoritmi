@@ -85,7 +85,7 @@ public class BinarySearchTree {
         print(root);
         System.out.println();
     }
-    // Usage example
+
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
         tree.insert(-1, 1);
