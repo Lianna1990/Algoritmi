@@ -1,5 +1,5 @@
 package ru.geekbrains.lesson6;
-
+//
 public class Stack {
     private int maxSize;
     private Node[] stack;

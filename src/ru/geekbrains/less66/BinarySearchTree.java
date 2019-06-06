@@ -1,5 +1,5 @@
 package ru.geekbrains.less66;
-//
+
 public class BinarySearchTree {
     Node root;
     static class Node {
