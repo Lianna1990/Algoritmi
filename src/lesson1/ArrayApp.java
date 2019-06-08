@@ -31,7 +31,7 @@ public class ArrayApp {
         System.out.println("");
 
         searchKey = 55;                      //удаление элемента с ключом  55
-        for (j = 55; j < nElems; j++)        //поиск удаляемого элемента
+        for (j = 0; j < nElems; j++)        //поиск удаляемого элемента
             if (arr[j] == searchKey)
                 break;
         for (int k = j; k < nElems - 1; k++) //сдвиг последующих элементов
