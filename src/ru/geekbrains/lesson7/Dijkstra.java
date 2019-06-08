@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson7;
 
-
+//
 
 public class Dijkstra {
     private static final Graph.Edge[] GRAPH = {
