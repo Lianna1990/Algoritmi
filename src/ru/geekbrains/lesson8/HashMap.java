@@ -3,7 +3,7 @@ package ru.geekbrains.lesson8;
 import java.util.*;
 
 /**
- * Создать программу, реализующую метод цепочек!!
+ * Создать программу, реализующую метод цепочек!
  */
 
 public class HashMap {
